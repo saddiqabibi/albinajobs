@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Al-Bina Careers - Pakistan's Leading Job Portal | Find Jobs & Hire Talent</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Find jobs in Pakistan, job portal Pakistan, online jobs, career opportunities, hire talent Pakistan, Al-Bina Careers" name="keywords">
+    <meta content="Al-Bina Careers is Pakistan's most trusted job portal. Find thousands of jobs across all industries, post your resume, and connect with top employers. Start your career journey today." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5177822330952725"
+     crossorigin="anonymous"></script>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary { background-color: var(--primary) !important; border-color: var(--primary) !important; }
+        .btn-primary:hover { background-color: var(--primary-dark) !important; border-color: var(--primary-dark) !important; }
+        .btn-secondary { background-color: var(--secondary) !important; border-color: var(--secondary) !important; }
+        .btn-secondary:hover { background-color: var(--dark) !important; border-color: var(--dark) !important; }
+        .border-primary { border-color: var(--primary) !important; }
+        .header-carousel .container,
+        .page-header .container { border-left: 15px solid var(--primary); }
+        .header-carousel .container::before,
+        .header-carousel .container::after,
+        .page-header .container::before,
+        .page-header .container::after { background: var(--primary); }
+        .cat-item:hover { border-color: var(--primary); }
+        .nav-pills .nav-item .active { border-bottom: 2px solid var(--primary); }
+        .testimonial-carousel .owl-item.center .testimonial-item { background: var(--primary) !important; }
+        .testimonial-carousel .owl-dot { border-color: var(--primary); }
+        .testimonial-carousel .owl-dot.active { background: var(--dark); border-color: var(--primary); }
+        .job-item:hover { border-color: var(--primary); }
+        .header-carousel .owl-nav .owl-prev:hover,
+        .header-carousel .owl-nav .owl-next:hover { background: var(--primary); border-color: var(--primary); }
+        .navbar-dark .navbar-nav .nav-link:hover,
+        .navbar-dark .navbar-nav .nav-link.active { color: var(--primary) !important; }
+        .footer .btn.btn-social:hover { color: var(--primary); }
+        .navbar-light .navbar-brand h1 { color: var(--primary) !important; }
+
+        /* ============================================ */
+        /* SECTION STYLES */
+        /* ============================================ */
+        .stat-item {
+            text-align: center;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .stat-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .stat-item h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .stat-item p {
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .stat-item i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .process-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .process-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .process-item .number {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .process-item h5 { font-weight: 600; margin-bottom: 10px; }
+        .process-item p { color: #666; margin-bottom: 0; font-size: 14px; line-height: 1.7; }
+
+        .company-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .company-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .company-item img { max-width: 120px; max-height: 60px; margin-bottom: 15px; }
+        .company-item h6 { font-weight: 600; }
+        .company-item p { color: #888; font-size: 13px; margin-bottom: 0; }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 80px 0;
+            color: #fff;
+        }
+        .cta-section h2 { font-size: 36px; font-weight: 700; }
+        .cta-section p { font-size: 18px; opacity: 0.9; line-height: 1.7; }
+        .cta-section .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-section .btn:hover { background: var(--dark); color: #fff; }
+        .cta-section .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-section .btn-outline:hover { background: #fff; color: var(--primary); }
+
+        .blog-item {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .blog-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .blog-item img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-item .blog-content { padding: 20px; }
+        .blog-item .blog-content h5 { font-weight: 600; margin-bottom: 10px; }
+        .blog-item .blog-content h5 a { color: #222; text-decoration: none; }
+        .blog-item .blog-content h5 a:hover { color: var(--primary); }
+        .blog-item .blog-content p { color: #555; font-size: 14px; line-height: 1.7; margin-bottom: 10px; }
+        .blog-item .blog-content .meta { color: #888; font-size: 13px; }
+        .blog-item .blog-content .meta i { color: var(--primary); margin-right: 5px; }
+
+        .newsletter-section {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+        .newsletter-section h2 { font-size: 28px; font-weight: 700; }
+        .newsletter-section p { color: #666; font-size: 16px; }
+        .newsletter-section .input-group { max-width: 500px; margin: 0 auto; }
+        .newsletter-section .input-group input {
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            border-radius: 30px 0 0 30px;
+            font-size: 16px;
+        }
+        .newsletter-section .input-group button {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 0 30px 30px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .newsletter-section .input-group button:hover { background: var(--primary-dark); }
+
+        .hero-section { position: relative; min-height: 600px; }
+        .hero-section .overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(26, 26, 46, 0.7);
+        }
+        .hero-section .content { position: relative; z-index: 2; }
+
+        .job-alert-section {
+            background: #f0f4f8;
+            padding: 60px 0;
+        }
+        .job-alert-section .alert-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary);
+        }
+        .job-alert-section .alert-box h3 { font-weight: 700; }
+        .job-alert-section .alert-box p { color: #666; }
+        .job-alert-section .alert-box .input-group { max-width: 550px; }
+        .job-alert-section .alert-box .input-group input {
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            border-radius: 30px 0 0 30px;
+            font-size: 16px;
+        }
+        .job-alert-section .alert-box .input-group button {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 0 30px 30px 0;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .job-alert-section .alert-box .input-group button:hover { background: var(--primary-dark); }
+
+        .success-story {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            text-align: center;
+        }
+        .success-story:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .success-story img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .success-story h5 { font-weight: 600; margin-bottom: 5px; }
+        .success-story .position { color: var(--primary); font-size: 14px; }
+        .success-story p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.8;
+            margin-top: 10px;
+        }
+        .success-story .quote-icon {
+            font-size: 30px;
+            color: var(--primary);
+            opacity: 0.3;
+            margin-bottom: 10px;
+        }
+
+        .employer-item {
+            text-align: center;
+            padding: 25px 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .employer-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .employer-item img {
+            max-width: 130px;
+            max-height: 60px;
+            margin-bottom: 12px;
+        }
+        .employer-item h6 { font-weight: 600; margin-bottom: 2px; }
+        .employer-item .job-count { color: #888; font-size: 13px; }
+
+        @media (max-width: 768px) {
+            .hero-section { min-height: 400px; }
+            .stat-item h2 { font-size: 32px; }
+            .cta-section h2 { font-size: 28px; }
+            .header-carousel .owl-carousel-item h1 { font-size: 28px !important; }
+            .job-alert-section .alert-box { padding: 25px; }
+            .job-alert-section .alert-box .input-group { flex-direction: column; }
+            .job-alert-section .alert-box .input-group input {
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+            .job-alert-section .alert-box .input-group button {
+                border-radius: 30px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fliud bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: SPINNER -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: NAVBAR -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="contact.html" class="dropdown-item">Contact</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: HERO CAROUSEL -->
+        <!-- ============================================ -->
+        <div class="container-fluid p-0">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative hero-section">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="Find Jobs in Pakistan | Al-Bina Careers">
+                    <div class="overlay"></div>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center content">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Find Your Dream Job in Pakistan</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Al-Bina Careers connects talented professionals with Pakistan's top employers. Browse thousands of verified job listings across all industries and start your career journey today.</p>
+                                    <a href="job-list.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Search Jobs</a>
+                                    <a href="post-job.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Post a Job</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel-item position-relative hero-section">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="Hire Top Talent in Pakistan | Al-Bina Careers">
+                    <div class="overlay"></div>
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center content">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-3 text-white animated slideInDown mb-4">Hire Top Talent in Pakistan</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Find the best candidates for your organization with Al-Bina Careers. Post your job vacancies, connect with skilled professionals, and build your dream team today.</p>
+                                    <a href="job-list.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Find Talent</a>
+                                    <a href="post-job.html" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight">Post a Job</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: SEARCH BAR -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0" placeholder="Search by job title, company, or skill..." />
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>All Industries & Categories</option>
+                                    <option>Construction & Engineering</option>
+                                    <option>Information Technology</option>
+                                    <option>Marketing & Sales</option>
+                                    <option>Finance & Accounting</option>
+                                    <option>Healthcare & Medical</option>
+                                    <option>Education & Training</option>
+                                    <option>Human Resources</option>
+                                    <option>Real Estate & Property</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0">
+                                    <option selected>All Cities in Pakistan</option>
+                                    <option>Lahore, Punjab</option>
+                                    <option>Karachi, Sindh</option>
+                                    <option>Islamabad, Capital Territory</option>
+                                    <option>Rawalpindi, Punjab</option>
+                                    <option>Multan, Punjab</option>
+                                    <option>Faisalabad, Punjab</option>
+                                    <option>Peshawar, Khyber Pakhtunkhwa</option>
+                                    <option>Quetta, Balochistan</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100"><i class="fas fa-search me-2"></i>Search Jobs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 5: STATISTICS -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Our Impact</p>
+                    <h2>Al-Bina Careers by the Numbers</h2>
+                    <p class="text-muted">Thousands of professionals and companies trust Al-Bina Careers for their hiring and career needs.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h2 data-toggle="counter-up">5,000+</h2>
+                            <p>Live Job Listings</p>
+                            <small class="text-muted">Updated daily</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-building"></i>
+                            <h2 data-toggle="counter-up">2,500+</h2>
+                            <p>Registered Companies</p>
+                            <small class="text-muted">Trusted employers</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-users"></i>
+                            <h2 data-toggle="counter-up">50,000+</h2>
+                            <p>Active Job Seekers</p>
+                            <small class="text-muted">Growing daily</small>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-check-circle"></i>
+                            <h2 data-toggle="counter-up">15,000+</h2>
+                            <p>Successful Placements</p>
+                            <small class="text-muted">Happy professionals</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 6: CATEGORIES -->
+        <!-- ============================================ -->
+        <div class="container-fliud py-5" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Explore by Industry</p>
+                    <h2>Find Jobs in Your Industry</h2>
+                    <p class="text-muted">Browse thousands of job opportunities across Pakistan's top industries and sectors.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-hard-hat text-primary mb-4"></i>
+                            <h6 class="mb-3">Construction & Engineering</h6>
+                            <p class="mb-0">250+ Open Positions</p>
+                            <small class="text-muted">Civil, Structural, Architecture</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h6 class="mb-3">Information Technology</h6>
+                            <p class="mb-0">1,200+ Open Positions</p>
+                            <small class="text-muted">Software, Web, AI, Data</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-chart-line text-primary mb-4"></i>
+                            <h6 class="mb-3">Marketing & Sales</h6>
+                            <p class="mb-0">850+ Open Positions</p>
+                            <small class="text-muted">Digital, Brand, B2B, B2C</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-coins text-primary mb-4"></i>
+                            <h6 class="mb-3">Finance & Accounting</h6>
+                            <p class="mb-0">630+ Open Positions</p>
+                            <small class="text-muted">Banking, Audit, Taxation</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-heartbeat text-primary mb-4"></i>
+                            <h6 class="mb-3">Healthcare & Medical</h6>
+                            <p class="mb-0">310+ Open Positions</p>
+                            <small class="text-muted">Doctors, Nurses, Admin</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-chalkboard-teacher text-primary mb-4"></i>
+                            <h6 class="mb-3">Education & Training</h6>
+                            <p class="mb-0">280+ Open Positions</p>
+                            <small class="text-muted">Teachers, Trainers, Admin</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-building text-primary mb-4"></i>
+                            <h6 class="mb-3">Real Estate & Property</h6>
+                            <p class="mb-0">190+ Open Positions</p>
+                            <small class="text-muted">Sales, Management, Admin</small>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <a class="cat-item rounded p-4" href="job-list.html">
+                            <i class="fa fa-3x fa-users text-primary mb-4"></i>
+                            <h6 class="mb-3">Human Resources</h6>
+                            <p class="mb-0">160+ Open Positions</p>
+                            <small class="text-muted">Recruitment, Training, Admin</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 7: HOW IT WORKS -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Simple Process</p>
+                    <h2>How Al-Bina Careers Works</h2>
+                    <p class="text-muted">Get started in three easy steps and find your dream job or hire the perfect candidate.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="process-item">
+                            <div class="number">1</div>
+                            <h5>Create Your Account</h5>
+                            <p>Sign up for free as a job seeker or employer. It takes less than 2 minutes to create your profile and start exploring opportunities on Al-Bina Careers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="process-item">
+                            <div class="number">2</div>
+                            <h5>Search or Post Jobs</h5>
+                            <p>Job seekers can search thousands of verified listings across all industries. Employers can post vacancies instantly and reach qualified candidates.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="process-item">
+                            <div class="number">3</div>
+                            <h5>Apply or Hire</h5>
+                            <p>Apply to jobs with a single click, track your applications, and get hired. Employers can review applications, interview candidates, and build their teams.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 8: ABOUT -->
+        <!-- ============================================ -->
+        <div class="container-fliud py-5" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="row g-0 about-bg rounded overflow-hidden">
+                            <div class="col-6 text-start">
+                                <img class="img-fluid w-100" src="img/about-1.jpg" alt="About Al-Bina Careers">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img class="img-fluid" src="img/about-2.jpg" style="width: 85%; margin-top: 15%;" alt="About Al-Bina Careers">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid" src="img/about-3.jpg" style="width: 85%;" alt="About Al-Bina Careers">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid w-100" src="img/about-4.jpg" alt="About Al-Bina Careers">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="section-header text-start">
+                            <p>About Al-Bina Careers</p>
+                            <h2>Pakistan's Most Trusted Job Portal</h2>
+                        </div>
+                        <p class="mb-4">Al-Bina Careers is the leading job portal in Pakistan, connecting talented professionals with top employers across all industries. We believe in making the hiring process simple, efficient, and accessible to everyone.</p>
+                        <p><i class="fa fa-check text-primary me-3"></i><strong>5,000+</strong> verified job listings updated daily</p>
+                        <p><i class="fa fa-check text-primary me-3"></i><strong>2,500+</strong> registered companies across Pakistan</p>
+                        <p><i class="fa fa-check text-primary me-3"></i><strong>Free</strong> job posting for employers</p>
+                        <p><i class="fa fa-check text-primary me-3"></i><strong>50,000+</strong> active job seekers</p>
+                        <a class="btn btn-primary py-3 px-5 mt-3" href="about.html">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 9: TOP EMPLOYERS -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Trusted by Leading Companies</p>
+                    <h2>Top Employers in Pakistan</h2>
+                    <p class="text-muted">Leading organizations across Pakistan trust Al-Bina Careers to find their next great hire.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-1.jpg" alt="Tech Solutions">
+                            <h6>Tech Solutions</h6>
+                            <span class="job-count">20+ Jobs</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-2.jpg" alt="Digital Agency">
+                            <h6>Digital Agency</h6>
+                            <span class="job-count">15+ Jobs</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-3.jpg" alt="Builders Corporation">
+                            <h6>Builders Corp</h6>
+                            <span class="job-count">12+ Jobs</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-4.jpg" alt="Healthcare Plus">
+                            <h6>Healthcare Plus</h6>
+                            <span class="job-count">18+ Jobs</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-5.jpg" alt="Finance Hub">
+                            <h6>Finance Hub</h6>
+                            <span class="job-count">10+ Jobs</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="employer-item">
+                            <img src="img/com-logo-1.jpg" alt="Al-Bina Group">
+                            <h6>Al-Bina Group</h6>
+                            <span class="job-count">25+ Jobs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 10: JOB LISTING -->
+        <!-- ============================================ -->
+        <div class="container-fliud py-5" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Latest Opportunities</p>
+                    <h2>Featured Job Listings</h2>
+                    <p class="text-muted">Discover the latest job opportunities from Pakistan's top employers. Apply today and take the next step in your career.</p>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.3s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
+                                <h6 class="mt-n1 mb-0">Featured Jobs</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
+                                <h6 class="mt-n1 mb-0">Full Time</h6>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
+                                <h6 class="mt-n1 mb-0">Part Time</h6>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <!-- Job 1 -->
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Senior Software Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Lahore, Pakistan</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 150,000 - 250,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: September 30, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Job 2 -->
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-2.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Marketing Manager</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Karachi, Pakistan</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 120,000 - 180,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: October 15, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Job 3 -->
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-3.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Civil Engineer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Islamabad, Pakistan</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 100,000 - 150,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: November 5, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Job 4 -->
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-4.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Accountant</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Lahore, Pakistan</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 80,000 - 120,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: October 20, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.html">Browse All Jobs <i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-5.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Graphic Designer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Rawalpindi, Pakistan</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 60,000 - 90,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: October 25, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.html">Browse All Jobs <i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="job-item p-4 mb-4">
+                                <div class="row g-4">
+                                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid border rounded" src="img/com-logo-1.jpg" alt="Company Logo" style="width: 80px; height: 80px;">
+                                        <div class="text-start ps-4">
+                                            <h5 class="mb-3">Content Writer</h5>
+                                            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>Remote</span>
+                                            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Part Time</span>
+                                            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>PKR 30,000 - 50,000</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                                        <div class="d-flex mb-3">
+                                            <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
+                                            <a class="btn btn-primary" href="">Apply Now</a>
+                                        </div>
+                                        <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Deadline: November 10, 2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary py-3 px-5" href="job-list.html">Browse All Jobs <i class="fa fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 11: CALL TO ACTION -->
+        <!-- ============================================ -->
+        <div class="cta-section wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <h2>Ready to Find Your Dream Job?</h2>
+                <p class="mx-auto" style="max-width: 700px;">Join thousands of professionals who have found their dream careers through Al-Bina Careers. Sign up today and take the first step toward your future.</p>
+                <div>
+                    <a href="job-list.html" class="btn me-3">Search Jobs</a>
+                    <a href="post-job.html" class="btn-outline">Post a Job</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 12: SUCCESS STORIES -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5" style="background: #f8f9fa;">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Real Stories, Real Results</p>
+                    <h2>Success Stories from Our Users</h2>
+                    <p class="text-muted">Hear from professionals and employers who found success through Al-Bina Careers.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="success-story">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <img src="img/testimonial-1.jpg" alt="Ahmed Khan">
+                            <h5>Ahmed Khan</h5>
+                            <div class="position">Software Engineer at Tech Solutions</div>
+                            <p>"I found my dream job through Al-Bina Careers within just two weeks. The platform is incredibly easy to use, and the job listings are always up-to-date. I couldn't be happier with my new role."</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="success-story">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <img src="img/testimonial-2.jpg" alt="Fatima Zaidi">
+                            <h5>Fatima Zaidi</h5>
+                            <div class="position">Marketing Manager at Digital Agency</div>
+                            <p>"Al-Bina Careers helped me transition into a leadership role. The career resources and job alerts kept me informed about the best opportunities. I highly recommend this platform to everyone."</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="success-story">
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <img src="img/testimonial-3.jpg" alt="Usman Ali">
+                            <h5>Usman Ali</h5>
+                            <div class="position">Civil Engineer at Builders Corp</div>
+                            <p>"I found a job that perfectly matches my skills and experience. The interview process was smooth, and I'm now working at my dream company. Thank you, Al-Bina Careers!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 13: TESTIMONIALS -->
+        <!-- ============================================ -->
+        <div class="container-fliud py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>What People Say</p>
+                    <h2>Testimonials from Our Community</h2>
+                    <p class="text-muted">Hear what our users say about their experience with Al-Bina Careers.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Al-Bina Careers helped me find my dream job in just 2 weeks! The platform is easy to use and the job listings are updated daily. Highly recommended for all job seekers in Pakistan.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Ahmed Khan</h5>
+                                <small>Software Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>As an employer, Al-Bina Careers has been a game-changer. We've hired 5 excellent candidates through this platform. The filtering and search features are fantastic and save us so much time.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Sara Ahmed</h5>
+                                <small>HR Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>I've used many job portals in Pakistan, but Al-Bina Careers is by far the best. The interface is clean, and I received interview calls within days of posting my resume. Truly amazing!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Usman Ali</h5>
+                                <small>Marketing Professional</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                        <p>Finding quality candidates used to be a major challenge for our company. Al-Bina Careers made it simple and efficient. We've found our best team members through this platform.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Fatima Zaidi</h5>
+                                <small>CEO, Tech Solutions</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 15: LATEST BLOG / CAREER TIPS -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Career Resources</p>
+                    <h2>Latest Career Tips & Insights</h2>
+                    <p class="text-muted">Expert advice to help you succeed in your job search and career growth.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-item">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Job Interview Tips">
+                            <div class="blog-content">
+                                <h5><a href="blog-single.html">10 Essential Tips for Job Interview Success in Pakistan</a></h5>
+                                <p>Learn proven strategies to ace your job interview, answer difficult questions confidently, and stand out from other candidates to land your dream job.</p>
+                                <div class="meta">
+                                    <span><i class="far fa-calendar-alt"></i> August 15, 2026</span>
+                                    <span class="ms-3"><i class="far fa-user"></i> Career Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-item">
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=400&fit=crop" alt="In-Demand Skills">
+                            <div class="blog-content">
+                                <h5><a href="blog-single.html">Top 10 In-Demand Skills in Pakistan for 2026</a></h5>
+                                <p>Discover the most sought-after skills by employers in Pakistan's job market. Learn how to develop these skills and boost your career prospects significantly.</p>
+                                <div class="meta">
+                                    <span><i class="far fa-calendar-alt"></i> August 10, 2026</span>
+                                    <span class="ms-3"><i class="far fa-user"></i> Career Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="blog-item">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop" alt="CV Writing Guide">
+                            <div class="blog-content">
+                                <h5><a href="blog-single.html">How to Write a Winning CV in 2026</a></h5>
+                                <p>A comprehensive guide to creating a professional CV that gets noticed by top employers. Learn what to include, what to avoid, and how to format your CV perfectly.</p>
+                                <div class="meta">
+                                    <span><i class="far fa-calendar-alt"></i> August 5, 2026</span>
+                                    <span class="ms-3"><i class="far fa-user"></i> Career Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 15: JOB ALERT / EMAIL NOTIFICATION -->
+        <!-- ============================================ -->
+        <div class="job-alert-section wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="alert-box">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <h3><i class="fas fa-bell text-primary me-3"></i>Get Job Alerts</h3>
+                            <p class="mb-lg-0">Never miss a job opportunity again. Subscribe to our job alerts and get daily updates matching your skills and preferences.</p>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Enter your email address">
+                                <button type="button">Subscribe Now</button>
+                            </div>
+                            <p class="mt-2 text-muted" style="font-size: 12px;"><i class="fas fa-check-circle text-primary me-2"></i>Free service. You can unsubscribe at any time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 16: NEWSLETTER -->
+        <!-- ============================================ -->
+        <div class="newsletter-section wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container text-center">
+                <h2><i class="fas fa-envelope text-primary me-3"></i>Subscribe for Weekly Career Updates</h2>
+                <p>Get weekly job updates, career tips, and interview advice delivered straight to your inbox. Join our community of professionals.</p>
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email address">
+                    <button class="btn" type="button">Subscribe Now</button>
+                </div>
+                <p class="mt-3 text-muted" style="font-size: 13px;"><i class="fas fa-lock text-primary me-2"></i>We respect your privacy. No spam, unsubscribe anytime.</p>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- SECTION 17: FOOTER -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html" style="color: #F28123;">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

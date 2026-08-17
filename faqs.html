@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FAQs - Al-Bina Careers | Frequently Asked Questions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="FAQs, Frequently Asked Questions, Al-Bina Careers, Job Portal Help, Career Questions" name="keywords">
+    <meta content="Find answers to frequently asked questions about Al-Bina Careers. Learn about job searching, posting jobs, account management, and more." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* FAQ PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('img/carousel-1.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .faq-main {
+            padding: 80px 0;
+        }
+        .faq-main .faq-search {
+            background: #f8f9fa;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .faq-main .faq-search h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .faq-main .faq-search p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .faq-main .faq-search .search-box {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .faq-main .faq-search .search-box input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px 0 0 8px;
+            outline: none;
+            font-size: 16px;
+        }
+        .faq-main .faq-search .search-box input:focus {
+            border-color: var(--primary);
+        }
+        .faq-main .faq-search .search-box button {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .faq-main .faq-search .search-box button:hover {
+            background: var(--primary-dark);
+        }
+
+        .faq-main .faq-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+        .faq-main .faq-categories a {
+            padding: 10px 25px;
+            background: #f8f9fa;
+            border-radius: 30px;
+            color: #555;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .faq-main .faq-categories a:hover,
+        .faq-main .faq-categories a.active {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+
+        .faq-main .faq-category {
+            margin-bottom: 40px;
+        }
+        .faq-main .faq-category .category-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }
+        .faq-main .faq-category .category-title i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        .faq-main .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+        .faq-main .faq-item:hover {
+            box-shadow: 0 5px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        .faq-main .faq-item .faq-question {
+            padding: 18px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+        .faq-main .faq-item .faq-question:hover {
+            background: #f0f0f0;
+        }
+        .faq-main .faq-item .faq-question h5 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 0;
+            color: #222;
+            flex: 1;
+        }
+        .faq-main .faq-item .faq-question i {
+            font-size: 18px;
+            color: var(--primary);
+            transition: all 0.3s ease;
+            margin-left: 15px;
+            flex-shrink: 0;
+        }
+        .faq-main .faq-item .faq-question i.rotate {
+            transform: rotate(180deg);
+        }
+        .faq-main .faq-item .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            color: #555;
+            line-height: 1.8;
+        }
+        .faq-main .faq-item .faq-answer.open {
+            padding: 20px 25px;
+            max-height: 500px;
+        }
+        .faq-main .faq-item .faq-answer ul {
+            margin: 10px 0 0 20px;
+        }
+        .faq-main .faq-item .faq-answer ul li {
+            margin-bottom: 5px;
+        }
+
+        .faq-main .no-results {
+            text-align: center;
+            padding: 40px;
+            display: none;
+        }
+        .faq-main .no-results i {
+            font-size: 60px;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+        .faq-main .no-results h4 {
+            color: #666;
+        }
+        .faq-main .no-results p {
+            color: #888;
+        }
+
+        .cta-faq {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-faq h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .cta-faq p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .cta-faq .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-faq .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .faq-main .faq-search {
+                padding: 25px 15px;
+            }
+            .faq-main .faq-search .search-box {
+                flex-direction: column;
+            }
+            .faq-main .faq-search .search-box input {
+                border-radius: 8px;
+                margin-bottom: 10px;
+            }
+            .faq-main .faq-search .search-box button {
+                border-radius: 8px;
+            }
+            .faq-main .faq-categories a {
+                padding: 8px 18px;
+                font-size: 14px;
+            }
+            .faq-main .faq-item .faq-question h5 {
+                font-size: 14px;
+            }
+            .cta-faq h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="post-job.html" class="dropdown-item">Post a Job</a>
+                            <a href="pricing.html" class="dropdown-item">Pricing</a>
+                            <a href="privacy.html" class="dropdown-item">Privacy Policy</a>
+                            <a href="terms.html" class="dropdown-item">Terms of Use</a>
+                            <a href="cookies.html" class="dropdown-item">Cookies Policy</a>
+                            <a href="faqs.html" class="dropdown-item active">FAQs</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Frequently Asked Questions</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Resources</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">FAQs</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: FAQ MAIN START -->
+        <!-- ============================================ -->
+        <div class="container-fluid faq-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-4">
+                    <p>Got Questions?</p>
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="text-muted">Find answers to the most common questions about Al-Bina Careers.</p>
+                </div>
+
+                <!-- Search Box -->
+                <div class="faq-search">
+                    <h3><i class="fas fa-search" style="color: var(--primary);"></i> Have a Question?</h3>
+                    <p>Search our FAQ database or browse the categories below to find answers to your questions.</p>
+                    <div class="search-box">
+                        <input type="text" id="faqSearchInput" placeholder="Search your question..." onkeyup="searchFAQs()">
+                        <button onclick="searchFAQs()"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                </div>
+
+                <!-- Category Navigation -->
+                <div class="faq-categories">
+                    <a href="#" class="active" data-category="all" onclick="filterCategory('all', this)">All Questions</a>
+                    <a href="#" data-category="general" onclick="filterCategory('general', this)">General</a>
+                    <a href="#" data-category="jobseekers" onclick="filterCategory('jobseekers', this)">Job Seekers</a>
+                    <a href="#" data-category="employers" onclick="filterCategory('employers', this)">Employers</a>
+                    <a href="#" data-category="account" onclick="filterCategory('account', this)">Account</a>
+                    <a href="#" data-category="technical" onclick="filterCategory('technical', this)">Technical</a>
+                </div>
+
+                <!-- No Results Message -->
+                <div class="no-results" id="noResults">
+                    <i class="fas fa-search"></i>
+                    <h4>No results found for your search.</h4>
+                    <p>Try using different keywords or browse the categories above.</p>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- CATEGORY: GENERAL -->
+                <!-- ============================================ -->
+                <div class="faq-category" data-category="general">
+                    <h4 class="category-title"><i class="fas fa-info-circle"></i> General Questions</h4>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>1. What is Al-Bina Careers?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Al-Bina Careers is Pakistan's leading job portal that connects talented professionals with top employers across all industries. We help job seekers find their dream careers and assist employers in hiring the best talent.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>2. Is Al-Bina Careers free to use?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Al-Bina Careers is completely free for job seekers. Employers can also post jobs for free with our basic plan. We also offer premium plans with additional features for employers.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>3. How do I get started on Al-Bina Careers?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Getting started is easy! Simply create a free account as a job seeker or employer. Job seekers can browse and apply for jobs, while employers can post job vacancies and review applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- CATEGORY: JOB SEEKERS -->
+                <!-- ============================================ -->
+                <div class="faq-category" data-category="jobseekers">
+                    <h4 class="category-title"><i class="fas fa-user-tie"></i> Job Seekers Questions</h4>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>4. How can I find jobs on Al-Bina Careers?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can find jobs by using the search bar on our homepage or by browsing job categories. You can filter jobs by industry, location, job type, and salary range to find the perfect match for your skills and preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>5. How do I apply for a job?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To apply for a job, simply click on the job listing and click the "Apply Now" button. You'll need to have an account and complete your profile. Some employers may require you to upload your CV and answer additional questions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>6. How can I create a strong profile?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>To create a strong profile, make sure to:
+                                <ul>
+                                    <li>Upload a professional photo</li>
+                                    <li>Write a compelling summary about yourself</li>
+                                    <li>List your work experience and education in detail</li>
+                                    <li>Add your skills and certifications</li>
+                                    <li>Upload an updated CV</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>7. How do I get job alerts?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can subscribe to job alerts by providing your email address in the newsletter section or by enabling job alerts in your account settings. We'll send you daily job updates matching your preferences.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- CATEGORY: EMPLOYERS -->
+                <!-- ============================================ -->
+                <div class="faq-category" data-category="employers">
+                    <h4 class="category-title"><i class="fas fa-building"></i> Employers Questions</h4>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>8. How do I post a job on Al-Bina Careers?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can post a job by clicking on the "Post a Job" button in the navigation bar. Fill out the job details form with the job title, description, requirements, and contact information. Your job will be reviewed and published within 24 hours.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>9. Is it free to post a job?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, posting a job on Al-Bina Careers is completely free. We also offer premium plans with additional features like featured listings, priority visibility, and dedicated support.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>10. How do I manage applications?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can manage applications from your employer dashboard. You can view applicant profiles, download CVs, shortlist candidates, and send interview invitations directly through our platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>11. How long does it take to get applications?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can start receiving applications immediately after your job is published. Depending on the role and industry, you may receive applications within 24-48 hours. Premium listings often get more visibility and applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- CATEGORY: ACCOUNT -->
+                <!-- ============================================ -->
+                <div class="faq-category" data-category="account">
+                    <h4 class="category-title"><i class="fas fa-user-circle"></i> Account Questions</h4>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>12. How do I create an account?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can create an account by clicking on the "Sign Up" button in the navigation bar. Choose your account type (Job Seeker or Employer), fill in your details, and verify your email address to get started.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>13. I forgot my password. What should I do?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you've forgotten your password, click on the "Forgot Password" link on the login page. Enter your registered email address, and we'll send you a password reset link to set a new password.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>14. How do I update my profile information?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>You can update your profile information by logging into your account and navigating to your profile settings. Here you can edit your personal details, work experience, education, skills, and upload a new CV.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>15. How do I delete my account?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you wish to delete your account, please contact our support team at info@albinacareers.com. We will process your request within 48 hours and delete all your personal data in accordance with our privacy policy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================================ -->
+                <!-- CATEGORY: TECHNICAL -->
+                <!-- ============================================ -->
+                <div class="faq-category" data-category="technical">
+                    <h4 class="category-title"><i class="fas fa-code"></i> Technical Questions</h4>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>16. What browsers are supported?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Al-Bina Careers supports all modern browsers including Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, and Opera. We recommend using the latest version of your preferred browser for the best experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>17. Is the website mobile-friendly?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, Al-Bina Careers is fully responsive and works seamlessly on all devices including smartphones, tablets, and desktop computers. You can access all features from your mobile browser.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">
+                            <h5>18. I'm experiencing technical issues. What should I do?</h5>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>If you're experiencing technical issues, please try the following:
+                                <ul>
+                                    <li>Clear your browser cache and cookies</li>
+                                    <li>Try using a different browser</li>
+                                    <li>Check your internet connection</li>
+                                    <li>If the issue persists, contact our support team with details about the problem</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- FAQ Main End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: CTA FAQ START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid cta-faq wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Still Have Questions?</h2>
+                <p>We're here to help! Contact our support team and get answers to all your questions about Al-Bina Careers.</p>
+                <a href="contact.html" class="btn me-3">Contact Us</a>
+                <a href="blog.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Visit Blog</a>
+            </div>
+        </div>
+        <!-- CTA FAQ End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FAQ JAVASCRIPT -->
+    <!-- ============================================ -->
+    <script>
+        // Toggle FAQ Answer
+        function toggleFAQ(element) {
+            var answer = element.nextElementSibling;
+            var icon = element.querySelector('i');
+            
+            // Close other open FAQs in the same category
+            var parent = element.parentElement.parentElement;
+            var allFAQs = parent.querySelectorAll('.faq-item');
+            allFAQs.forEach(function(item) {
+                if (item !== element.parentElement) {
+                    var ans = item.querySelector('.faq-answer');
+                    var icn = item.querySelector('.faq-question i');
+                    if (ans.classList.contains('open')) {
+                        ans.classList.remove('open');
+                        icn.classList.remove('rotate');
+                    }
+                }
+            });
+            
+            // Toggle current FAQ
+            answer.classList.toggle('open');
+            icon.classList.toggle('rotate');
+        }
+
+        // Search Functionality
+        function searchFAQs() {
+            var input = document.getElementById('faqSearchInput');
+            var filter = input.value.toLowerCase().trim();
+            var items = document.querySelectorAll('.faq-item');
+            var noResults = document.getElementById('noResults');
+            var found = false;
+
+            if (filter === '') {
+                items.forEach(function(item) {
+                    item.style.display = 'block';
+                    var answer = item.querySelector('.faq-answer');
+                    var icon = item.querySelector('.faq-question i');
+                    if (answer.classList.contains('open')) {
+                        answer.classList.remove('open');
+                        icon.classList.remove('rotate');
+                    }
+                });
+                document.querySelectorAll('.faq-category').forEach(function(cat) {
+                    cat.style.display = 'block';
+                });
+                noResults.style.display = 'none';
+                filterCategory('all', document.querySelector('.faq-categories a.active'));
+                return;
+            }
+
+            items.forEach(function(item) {
+                var question = item.querySelector('.faq-question h5').textContent.toLowerCase();
+                var answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                var match = question.includes(filter) || answer.includes(filter);
+                
+                if (match) {
+                    item.style.display = 'block';
+                    found = true;
+                    var ansDiv = item.querySelector('.faq-answer');
+                    var icon = item.querySelector('.faq-question i');
+                    if (!ansDiv.classList.contains('open')) {
+                        ansDiv.classList.add('open');
+                        icon.classList.add('rotate');
+                    }
+                } else {
+                    item.style.display = 'none';
+                    var ansDiv = item.querySelector('.faq-answer');
+                    var icon = item.querySelector('.faq-question i');
+                    if (ansDiv.classList.contains('open')) {
+                        ansDiv.classList.remove('open');
+                        icon.classList.remove('rotate');
+                    }
+                }
+            });
+
+            if (found) {
+                noResults.style.display = 'none';
+            } else {
+                noResults.style.display = 'block';
+            }
+
+            document.querySelectorAll('.faq-category').forEach(function(cat) {
+                var visibleItems = cat.querySelectorAll('.faq-item[style*="display: block"]');
+                if (visibleItems.length === 0 && filter !== '') {
+                    cat.style.display = 'none';
+                } else {
+                    cat.style.display = 'block';
+                }
+            });
+        }
+
+        // Category Filter
+        function filterCategory(category, element) {
+            document.querySelectorAll('.faq-categories a').forEach(function(link) {
+                link.classList.remove('active');
+            });
+            element.classList.add('active');
+
+            document.getElementById('faqSearchInput').value = '';
+            document.getElementById('noResults').style.display = 'none';
+
+            document.querySelectorAll('.faq-category').forEach(function(cat) {
+                if (category === 'all' || cat.getAttribute('data-category') === category) {
+                    cat.style.display = 'block';
+                } else {
+                    cat.style.display = 'none';
+                }
+            });
+
+            document.querySelectorAll('.faq-item').forEach(function(item) {
+                item.style.display = 'block';
+                var answer = item.querySelector('.faq-answer');
+                var icon = item.querySelector('.faq-question i');
+                if (answer.classList.contains('open')) {
+                    answer.classList.remove('open');
+                    icon.classList.remove('rotate');
+                }
+            });
+        }
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

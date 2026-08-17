@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pricing Plans - Al-Bina Careers | Affordable Job Posting & Hiring Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pricing Plans Pakistan, Job Posting Cost, Hire Talent, Employer Plans, Al-Bina Careers" name="keywords">
+    <meta content="Choose the perfect pricing plan for your business on Al-Bina Careers. Free, Premium, and Enterprise plans available to help you find the best talent." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* PRICING PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('img/carousel-1.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .pricing-main {
+            padding: 80px 0;
+        }
+        .pricing-main .pricing-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid #eee;
+            position: relative;
+        }
+        .pricing-main .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
+        }
+        .pricing-main .pricing-card.popular {
+            border-color: var(--primary);
+            background: #fff;
+        }
+        .pricing-main .pricing-card .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: #fff;
+            padding: 4px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        .pricing-main .pricing-card .plan-icon {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .pricing-main .pricing-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .pricing-main .pricing-card .subtitle {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .pricing-main .pricing-card .price {
+            font-size: 44px;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 15px 0;
+        }
+        .pricing-main .pricing-card .price small {
+            font-size: 16px;
+            font-weight: 400;
+            color: #888;
+        }
+        .pricing-main .pricing-card .price .currency {
+            font-size: 20px;
+            vertical-align: top;
+            margin-top: 5px;
+            display: inline-block;
+        }
+        .pricing-main .pricing-card .description {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .pricing-main .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .pricing-main .pricing-card ul li {
+            padding: 10px 0;
+            color: #555;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .pricing-main .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+        .pricing-main .pricing-card ul li i {
+            width: 22px;
+            margin-right: 12px;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .pricing-main .pricing-card ul li .fa-check {
+            color: var(--primary);
+        }
+        .pricing-main .pricing-card ul li .fa-times {
+            color: #e74c3c;
+        }
+        .pricing-main .pricing-card .btn {
+            border-radius: 30px;
+            padding: 12px 35px;
+            font-weight: 600;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .pricing-main .pricing-card .btn-outline-primary {
+            color: var(--primary);
+            border: 2px solid var(--primary);
+            background: transparent;
+        }
+        .pricing-main .pricing-card .btn-outline-primary:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+        .pricing-main .pricing-card .btn-primary {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+        }
+        .pricing-main .pricing-card .btn-primary:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+        }
+
+        .pricing-features {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        .pricing-features .feature-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .pricing-features .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .pricing-features .feature-item i {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: block;
+        }
+        .pricing-features .feature-item h5 {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .pricing-features .feature-item p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .pricing-faq {
+            padding: 80px 0;
+        }
+        .pricing-faq .faq-item {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px 25px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        .pricing-faq .faq-item:hover {
+            border-left-color: var(--primary);
+            transform: translateX(5px);
+        }
+        .pricing-faq .faq-item h6 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .pricing-faq .faq-item h6 i {
+            color: var(--primary);
+            margin-right: 10px;
+        }
+        .pricing-faq .faq-item p {
+            color: #666;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .cta-pricing {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-pricing h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .cta-pricing p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .cta-pricing .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-pricing .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .pricing-main .pricing-card {
+                margin-bottom: 20px;
+            }
+            .pricing-main .pricing-card .price {
+                font-size: 36px;
+            }
+            .cta-pricing h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="post-job.html" class="dropdown-item">Post a Job</a>
+                            <a href="pricing.html" class="dropdown-item active">Pricing</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Pricing Plans</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Resources</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Pricing</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: PRICING CARDS START -->
+        <!-- ============================================ -->
+        <div class="container-fluid pricing-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Choose Your Plan</p>
+                    <h2>Simple, Transparent Pricing</h2>
+                    <p class="text-muted">Select the perfect plan for your hiring needs. Start with a free plan and upgrade anytime.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Free Plan -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card">
+                            <div class="plan-icon"><i class="fas fa-crown"></i></div>
+                            <h3>Free</h3>
+                            <div class="subtitle">Perfect for small businesses</div>
+                            <div class="price"><span class="currency">PKR</span> 0 <small>/ job</small></div>
+                            <div class="description">Post your first job for free and start hiring today.</div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Post unlimited jobs</li>
+                                <li><i class="fas fa-check"></i> 30 days active listing</li>
+                                <li><i class="fas fa-check"></i> Basic visibility</li>
+                                <li><i class="fas fa-check"></i> Email support</li>
+                                <li><i class="fas fa-times"></i> Featured listing</li>
+                                <li><i class="fas fa-times"></i> Priority support</li>
+                            </ul>
+                            <a href="post-job.html" class="btn btn-outline-primary">Get Started Free</a>
+                        </div>
+                    </div>
+
+                    <!-- Premium Plan - Most Popular -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card popular">
+                            <div class="popular-badge">Most Popular</div>
+                            <div class="plan-icon"><i class="fas fa-star"></i></div>
+                            <h3>Premium</h3>
+                            <div class="subtitle">Best for growing companies</div>
+                            <div class="price"><span class="currency">PKR</span> 2,999 <small>/ month</small></div>
+                            <div class="description">Get featured visibility and reach more qualified candidates.</div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Post unlimited jobs</li>
+                                <li><i class="fas fa-check"></i> 60 days active listing</li>
+                                <li><i class="fas fa-check"></i> Featured listing (Top position)</li>
+                                <li><i class="fas fa-check"></i> Priority visibility</li>
+                                <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                                <li><i class="fas fa-check"></i> Company profile page</li>
+                            </ul>
+                            <a href="post-job.html" class="btn btn-primary">Start Premium</a>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="col-lg-4">
+                        <div class="pricing-card">
+                            <div class="plan-icon"><i class="fas fa-building"></i></div>
+                            <h3>Enterprise</h3>
+                            <div class="subtitle">For large organizations</div>
+                            <div class="price"><span class="currency">PKR</span> 7,999 <small>/ month</small></div>
+                            <div class="description">Complete hiring solution with dedicated support.</div>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Unlimited job posts</li>
+                                <li><i class="fas fa-check"></i> 90 days active listing</li>
+                                <li><i class="fas fa-check"></i> Premium placement</li>
+                                <li><i class="fas fa-check"></i> Company branding</li>
+                                <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                                <li><i class="fas fa-check"></i> Custom solutions</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline-primary">Contact Sales</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing Cards End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: COMPARE FEATURES START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid pricing-features wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>What's Included</p>
+                    <h2>Compare Features Across Plans</h2>
+                    <p class="text-muted">Everything you need to know about our pricing plans at a glance.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h5>Unlimited Job Posts</h5>
+                            <p>Post as many job vacancies as you need, no restrictions on the number of jobs you can list.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <h5>Extended Listing Duration</h5>
+                            <p>Keep your jobs active for 30, 60, or 90 days depending on your chosen plan.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <h5>Featured Job Listings</h5>
+                            <p>Get priority placement at the top of search results and category pages.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h5>Candidate Management</h5>
+                            <p>Easily manage applications, review candidate profiles, and track hiring progress.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-headset"></i>
+                            <h5>Priority Support</h5>
+                            <p>Get faster responses with priority support from our dedicated team.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item">
+                            <i class="fas fa-building"></i>
+                            <h5>Company Branding</h5>
+                            <p>Showcase your company with a branded profile page and logo on all job listings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Compare Features End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: FAQ START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid pricing-faq wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Questions?</p>
+                    <h2>Frequently Asked Questions About Pricing</h2>
+                    <p class="text-muted">Find answers to common questions about our pricing plans.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>Is it really free to post a job?</h6>
+                            <p>Yes, you can post your first job for free on Al-Bina Careers. The free plan includes all basic features to help you get started.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>Can I upgrade my plan later?</h6>
+                            <p>Absolutely! You can upgrade from the Free plan to Premium or Enterprise at any time. Your jobs will automatically get the upgraded features.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>What payment methods do you accept?</h6>
+                            <p>We accept all major credit/debit cards, bank transfers, and mobile payment options for your convenience.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>Do you offer discounts for non-profits?</h6>
+                            <p>Yes, we offer special pricing for non-profit organizations and educational institutions. Please contact our sales team for details.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>How long does it take to post a job?</h6>
+                            <p>Posting a job takes less than 5 minutes. Once submitted, your job will be reviewed and published within 24 hours.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle"></i>Can I cancel my subscription anytime?</h6>
+                            <p>Yes, you can cancel your subscription anytime. No long-term contracts required. You'll continue to have access until the end of your billing period.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 5: CTA PRICING START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid cta-pricing wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Ready to Find the Perfect Candidate?</h2>
+                <p>Start posting jobs today and connect with thousands of qualified professionals across Pakistan.</p>
+                <a href="post-job.html" class="btn me-3">Post a Job Now</a>
+                <a href="contact.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Contact Sales</a>
+            </div>
+        </div>
+        <!-- CTA Pricing End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 6: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

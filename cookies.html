@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Cookies Policy - Al-Bina Careers | Cookie Usage & Privacy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Cookies Policy, Cookie Usage, Al-Bina Careers, Privacy, Data Tracking, GDPR Cookies" name="keywords">
+    <meta content="Learn about how Al-Bina Careers uses cookies on our job portal. Understand what cookies are, how we use them, and how you can manage your cookie preferences." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* COOKIES PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('img/carousel-1.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .cookies-main {
+            padding: 80px 0;
+        }
+        .cookies-main .cookies-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .cookies-main .cookies-content .last-updated {
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .cookies-main .cookies-content .last-updated i {
+            color: var(--primary);
+        }
+        .cookies-main .cookies-content .toc {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin-bottom: 35px;
+        }
+        .cookies-main .cookies-content .toc h4 {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .cookies-main .cookies-content .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            columns: 2;
+        }
+        .cookies-main .cookies-content .toc ul li {
+            padding: 5px 0;
+        }
+        .cookies-main .cookies-content .toc ul li a {
+            color: #555;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .cookies-main .cookies-content .toc ul li a:hover {
+            color: var(--primary);
+            padding-left: 5px;
+        }
+        .cookies-main .cookies-content .toc ul li::before {
+            content: "▸ ";
+            color: var(--primary);
+            font-weight: 700;
+        }
+        .cookies-main .cookies-content h3 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #222;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+        .cookies-main .cookies-content h4 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        .cookies-main .cookies-content p {
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        .cookies-main .cookies-content ul {
+            margin: 10px 0 20px 25px;
+        }
+        .cookies-main .cookies-content ul li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+        .cookies-main .cookies-content ul li strong {
+            color: var(--primary);
+        }
+        .cookies-main .cookies-content .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 5px;
+            margin: 25px 0;
+        }
+        .cookies-main .cookies-content .highlight-box p {
+            margin-bottom: 0;
+            font-weight: 500;
+        }
+        .cookies-main .cookies-content .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .cookies-main .cookies-content .cookie-table th {
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        .cookies-main .cookies-content .cookie-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            color: #555;
+        }
+        .cookies-main .cookies-content .cookie-table tr:hover td {
+            background: #f8f9fa;
+        }
+        .cookies-main .cookies-content .cookie-table .category-badge {
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .cookies-main .cookies-content .cookie-table .badge-necessary {
+            background: #dc3545;
+            color: #fff;
+        }
+        .cookies-main .cookies-content .cookie-table .badge-functional {
+            background: #28a745;
+            color: #fff;
+        }
+        .cookies-main .cookies-content .cookie-table .badge-analytics {
+            background: #17a2b8;
+            color: #fff;
+        }
+        .cookies-main .cookies-content .cookie-table .badge-advertising {
+            background: #ffc107;
+            color: #222;
+        }
+        .cookies-main .cookies-content .contact-cookies {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .cookies-main .cookies-content .contact-cookies h4 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        .cookies-main .cookies-content .contact-cookies p {
+            margin-bottom: 5px;
+        }
+        .cookies-main .cookies-content .contact-cookies a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .cookies-main .cookies-content .contact-cookies a:hover {
+            text-decoration: underline;
+        }
+        .cookies-main .cookies-content .footer-note {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+        .cookies-main .cookies-content .footer-note i {
+            color: var(--primary);
+        }
+
+        .cta-cookies {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-cookies h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .cta-cookies p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .cta-cookies .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-cookies .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .cookie-banner {
+            background: #222;
+            color: #fff;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+            display: none;
+        }
+        .cookie-banner .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .cookie-banner p {
+            margin-bottom: 0;
+            font-size: 14px;
+            color: #ddd;
+        }
+        .cookie-banner p a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .cookie-banner p a:hover {
+            text-decoration: underline;
+        }
+        .cookie-banner .btn-accept {
+            background: var(--primary);
+            color: #fff;
+            border: none;
+            padding: 8px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .cookie-banner .btn-accept:hover {
+            background: #fff;
+            color: #222;
+        }
+        .cookie-banner .btn-settings {
+            background: transparent;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        .cookie-banner .btn-settings:hover {
+            background: #555;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .cookies-main .cookies-content .toc ul {
+                columns: 1;
+            }
+            .cookies-main .cookies-content .cookie-table {
+                font-size: 12px;
+            }
+            .cookies-main .cookies-content .cookie-table th,
+            .cookies-main .cookies-content .cookie-table td {
+                padding: 8px 10px;
+            }
+            .cookie-banner .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .cookie-banner p {
+                margin-bottom: 15px;
+            }
+            .cta-cookies h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="post-job.html" class="dropdown-item">Post a Job</a>
+                            <a href="pricing.html" class="dropdown-item">Pricing</a>
+                            <a href="privacy.html" class="dropdown-item">Privacy Policy</a>
+                            <a href="terms.html" class="dropdown-item">Terms of Use</a>
+                            <a href="cookies.html" class="dropdown-item active">Cookies Policy</a>
+                            <a href="faqs.html" class="dropdown-item">FAQs</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Cookies Policy</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Legal</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Cookies Policy</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: COOKIES CONTENT START -->
+        <!-- ============================================ -->
+        <div class="container-fluid cookies-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="cookies-content">
+                    <div class="section-header text-center mb-4">
+                        <p>Cookie Usage</p>
+                        <h2>Al-Bina Careers Cookies Policy</h2>
+                    </div>
+
+                    <div class="last-updated">
+                        <i class="far fa-calendar-alt"></i> <strong>Last Updated:</strong> August 17, 2026
+                    </div>
+
+                    <!-- Table of Contents -->
+                    <div class="toc">
+                        <h4><i class="fas fa-list-ul"></i> Table of Contents</h4>
+                        <ul>
+                            <li><a href="#section1">1. What Are Cookies?</a></li>
+                            <li><a href="#section2">2. How We Use Cookies</a></li>
+                            <li><a href="#section3">3. Types of Cookies We Use</a></li>
+                            <li><a href="#section4">4. Cookies We Use</a></li>
+                            <li><a href="#section5">5. Third-Party Cookies</a></li>
+                            <li><a href="#section6">6. Managing Cookies</a></li>
+                            <li><a href="#section7">7. Your Choices</a></li>
+                            <li><a href="#section8">8. Changes to This Policy</a></li>
+                            <li><a href="#section9">9. Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Introduction -->
+                    <div class="highlight-box">
+                        <p><i class="fas fa-cookie-bite" style="color: var(--primary); margin-right: 10px;"></i> 
+                        <strong>Welcome to Al-Bina Careers' Cookies Policy!</strong> This policy explains how we use cookies and similar technologies on our website. We are committed to being transparent about our use of cookies and giving you control over your preferences.</p>
+                    </div>
+
+                    <!-- Section 1 -->
+                    <h3 id="section1">1. What Are Cookies?</h3>
+                    <p>Cookies are small text files that are placed on your computer, smartphone, or other device when you visit a website. They are widely used to make websites work more efficiently and provide information to the website owners.</p>
+                    <ul>
+                        <li><strong>How They Work:</strong> Cookies are stored by your browser and contain information that helps websites remember your preferences and activity.</li>
+                        <li><strong>Session Cookies:</strong> These are temporary cookies that are deleted when you close your browser.</li>
+                        <li><strong>Persistent Cookies:</strong> These remain on your device for a set period and are used to remember your preferences for future visits.</li>
+                        <li><strong>First-Party Cookies:</strong> Set by the website you are visiting (Al-Bina Careers).</li>
+                        <li><strong>Third-Party Cookies:</strong> Set by other websites or services that we use (like Google Analytics).</li>
+                    </ul>
+
+                    <!-- Section 2 -->
+                    <h3 id="section2">2. How We Use Cookies</h3>
+                    <p>We use cookies for various purposes to enhance your experience on our website:</p>
+                    <ul>
+                        <li><strong>Essential Functions:</strong> To enable core website functionality and navigation.</li>
+                        <li><strong>Performance Monitoring:</strong> To analyze how visitors use our website and improve its performance.</li>
+                        <li><strong>Remembering Preferences:</strong> To remember your settings, language preferences, and saved jobs.</li>
+                        <li><strong>Marketing & Advertising:</strong> To deliver relevant advertisements and measure their effectiveness.</li>
+                        <li><strong>Security:</strong> To help protect our website and users from security risks.</li>
+                    </ul>
+
+                    <!-- Section 3 -->
+                    <h3 id="section3">3. Types of Cookies We Use</h3>
+                    <p>We use different types of cookies on our website:</p>
+
+                    <h4>3.1 Necessary Cookies</h4>
+                    <p>These cookies are essential for the website to function properly. They enable basic features like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Core website functionality</li>
+                        <li><strong>Storage Duration:</strong> Session-based</li>
+                        <li><strong>Examples:</strong> Session IDs, security tokens</li>
+                    </ul>
+
+                    <h4>3.2 Functional Cookies</h4>
+                    <p>These cookies help us remember your preferences and provide enhanced, more personal features. They may be set by us or by third-party providers whose services we have added to our pages.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Remember user preferences</li>
+                        <li><strong>Storage Duration:</strong> Up to 1 year</li>
+                        <li><strong>Examples:</strong> Language preferences, saved settings</li>
+                    </ul>
+
+                    <h4>3.3 Analytics / Performance Cookies</h4>
+                    <p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us know which pages are the most and least popular and see how visitors move around the site.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Website analytics and performance</li>
+                        <li><strong>Storage Duration:</strong> Up to 26 months</li>
+                        <li><strong>Examples:</strong> Google Analytics cookies</li>
+                    </ul>
+
+                    <h4>3.4 Advertising / Targeting Cookies</h4>
+                    <p>These cookies are used to deliver advertisements that are more relevant to you and your interests. They also help us measure the effectiveness of our advertising campaigns.</p>
+                    <ul>
+                        <li><strong>Purpose:</strong> Targeted advertising</li>
+                        <li><strong>Storage Duration:</strong> Up to 2 years</li>
+                        <li><strong>Examples:</strong> Google AdSense cookies</li>
+                    </ul>
+
+                    <!-- Section 4 -->
+                    <h3 id="section4">4. Cookies We Use</h3>
+                    <p>Here is a detailed list of the specific cookies we use on our website:</p>
+
+                    <table class="cookie-table">
+                        <thead>
+                            <tr>
+                                <th>Cookie Name</th>
+                                <th>Provider</th>
+                                <th>Category</th>
+                                <th>Purpose</th>
+                                <th>Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PHPSESSID</td>
+                                <td>Al-Bina Careers</td>
+                                <td><span class="category-badge badge-necessary">Necessary</span></td>
+                                <td>Session management and security</td>
+                                <td>Session</td>
+                            </tr>
+                            <tr>
+                                <td>cookie_preferences</td>
+                                <td>Al-Bina Careers</td>
+                                <td><span class="category-badge badge-functional">Functional</span></td>
+                                <td>Stores your cookie consent preferences</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <td>language</td>
+                                <td>Al-Bina Careers</td>
+                                <td><span class="category-badge badge-functional">Functional</span></td>
+                                <td>Remember language preferences</td>
+                                <td>1 year</td>
+                            </tr>
+                            <tr>
+                                <td>_ga</td>
+                                <td>Google Analytics</td>
+                                <td><span class="category-badge badge-analytics">Analytics</span></td>
+                                <td>Distinguishes unique users</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>_gid</td>
+                                <td>Google Analytics</td>
+                                <td><span class="category-badge badge-analytics">Analytics</span></td>
+                                <td>Distinguishes users session</td>
+                                <td>24 hours</td>
+                            </tr>
+                            <tr>
+                                <td>_gat</td>
+                                <td>Google Analytics</td>
+                                <td><span class="category-badge badge-analytics">Analytics</span></td>
+                                <td>Throttles request rate</td>
+                                <td>1 minute</td>
+                            </tr>
+                            <tr>
+                                <td>__gads</td>
+                                <td>Google AdSense</td>
+                                <td><span class="category-badge badge-advertising">Advertising</span></td>
+                                <td>Ad serving and targeting</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>__gpi</td>
+                                <td>Google AdSense</td>
+                                <td><span class="category-badge badge-advertising">Advertising</span></td>
+                                <td>Ad targeting and personalization</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>CONSENT</td>
+                                <td>Google</td>
+                                <td><span class="category-badge badge-advertising">Advertising</span></td>
+                                <td>Google consent tracking</td>
+                                <td>2 years</td>
+                            </tr>
+                            <tr>
+                                <td>__cfduid</td>
+                                <td>Cloudflare</td>
+                                <td><span class="category-badge badge-necessary">Necessary</span></td>
+                                <td>Security and performance</td>
+                                <td>1 month</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- Section 5 -->
+                    <h3 id="section5">5. Third-Party Cookies</h3>
+                    <p>We use several third-party services that may place cookies on your device:</p>
+
+                    <h4>5.1 Google Analytics</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Website analytics and performance monitoring</li>
+                        <li><strong>Provider:</strong> Google LLC</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--primary);">Google Privacy Policy</a></li>
+                        <li><strong>Opt-Out:</strong> <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color: var(--primary);">Google Analytics Opt-Out</a></li>
+                    </ul>
+
+                    <h4>5.2 Google AdSense</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Advertising and monetization</li>
+                        <li><strong>Provider:</strong> Google LLC</li>
+                        <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank" style="color: var(--primary);">Google Privacy Policy</a></li>
+                        <li><strong>Opt-Out:</strong> <a href="https://adssettings.google.com" target="_blank" style="color: var(--primary);">Google Ad Settings</a></li>
+                    </ul>
+
+                    <h4>5.3 Social Media Platforms</h4>
+                    <ul>
+                        <li><strong>Services:</strong> Facebook, Twitter, LinkedIn, Instagram</li>
+                        <li><strong>Purpose:</strong> Social sharing and engagement</li>
+                        <li><strong>Note:</strong> These platforms may place cookies if you are logged into their services.</li>
+                    </ul>
+
+                    <!-- Section 6 -->
+                    <h3 id="section6">6. Managing Cookies</h3>
+                    <p>You have the right to control how cookies are used on your device. Here are the ways you can manage cookies:</p>
+
+                    <h4>6.1 Browser Settings</h4>
+                    <ul>
+                        <li><strong>Chrome:</strong> Settings → Privacy and Security → Site Settings → Cookies</li>
+                        <li><strong>Firefox:</strong> Options → Privacy & Security → Cookies and Site Data</li>
+                        <li><strong>Safari:</strong> Preferences → Privacy → Cookies and Website Data</li>
+                        <li><strong>Edge:</strong> Settings → Site Permissions → Cookies and Site Data</li>
+                    </ul>
+
+                    <h4>6.2 Cookie Consent Banner</h4>
+                    <p>When you first visit our website, you will see a cookie consent banner that allows you to accept or reject non-essential cookies.</p>
+
+                    <h4>6.3 Opt-Out Tools</h4>
+                    <ul>
+                        <li><a href="https://tools.google.com/dlpage/gaoptout" target="_blank" style="color: var(--primary);">Google Analytics Opt-Out Extension</a></li>
+                        <li><a href="https://adssettings.google.com" target="_blank" style="color: var(--primary);">Google Ad Settings</a></li>
+                        <li><a href="https://optout.aboutads.info" target="_blank" style="color: var(--primary);">NAI Opt-Out Page</a></li>
+                    </ul>
+
+                    <!-- Section 7 -->
+                    <h3 id="section7">7. Your Choices</h3>
+                    <p>You have the following choices regarding cookies:</p>
+                    <ul>
+                        <li><strong>Accept All:</strong> Accept all cookies and continue with full functionality.</li>
+                        <li><strong>Reject Non-Essential:</strong> Reject all cookies except necessary ones.</li>
+                        <li><strong>Custom Preferences:</strong> Select which types of cookies you want to allow.</li>
+                        <li><strong>Change Later:</strong> Change your cookie preferences at any time.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p><i class="fas fa-info-circle" style="color: var(--primary); margin-right: 10px;"></i> 
+                        <strong>Note:</strong> Disabling cookies may affect the functionality and performance of our website. Some features may not work as expected.</p>
+                    </div>
+
+                    <!-- Section 8 -->
+                    <h3 id="section8">8. Changes to This Policy</h3>
+                    <p>We may update this Cookies Policy from time to time to reflect changes in our practices, technology, or legal requirements. We will notify you of any material changes by:</p>
+                    <ul>
+                        <li>Posting the updated policy on this page with a new "Last Updated" date.</li>
+                        <li>Displaying a notice on our website for significant changes.</li>
+                    </ul>
+                    <p>We encourage you to review this policy periodically to stay informed about how we use cookies.</p>
+
+                    <!-- Section 9 -->
+                    <h3 id="section9">9. Contact Us</h3>
+                    <p>If you have any questions, concerns, or requests regarding this Cookies Policy, please contact us:</p>
+
+                    <div class="contact-cookies">
+                        <h4><i class="fas fa-envelope" style="color: var(--primary);"></i> Contact Information</h4>
+                        <p><strong>Company Name:</strong> Al-Bina Careers</p>
+                        <p><strong>Email:</strong> <a href="mailto:info@albinacareers.com">info@albinacareers.com</a></p>
+                        <p><strong>Phone:</strong> <a href="tel:+923001234567">+92-300-1234567</a></p>
+                        <p><strong>Address:</strong> Main Boulevard, Lahore, Pakistan</p>
+                        <p><strong>Working Hours:</strong> Monday - Saturday, 9:00 AM - 6:00 PM (PKT)</p>
+                    </div>
+
+                    <!-- Footer Note -->
+                    <div class="footer-note">
+                        <p><i class="fas fa-cookie"></i> This Cookies Policy is designed to comply with applicable data protection laws, including the GDPR and ePrivacy Directive.</p>
+                        <p>© 2026 Al-Bina Careers. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cookies Content End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: CTA COOKIES START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid cta-cookies wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Have Questions About Our Cookie Usage?</h2>
+                <p>We're here to help. Contact our privacy team if you have any questions about how we use cookies.</p>
+                <a href="contact.html" class="btn me-3">Contact Us</a>
+                <a href="privacy.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Privacy Policy</a>
+            </div>
+        </div>
+        <!-- CTA Cookies End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- ============================================ -->
+    <!-- COOKIE CONSENT BANNER (JavaScript) -->
+    <!-- ============================================ -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="container">
+            <p>
+                <i class="fas fa-cookie" style="color: var(--primary);"></i> 
+                We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies. 
+                <a href="cookies.html">Learn more</a>
+            </p>
+            <div>
+                <button class="btn-settings" onclick="window.location.href='cookies.html#section6'">Settings</button>
+                <button class="btn-accept" onclick="acceptCookies()">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if cookies are already accepted
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!localStorage.getItem('cookiesAccepted')) {
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        });
+
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.getElementById('cookieBanner').style.display = 'none';
+            // You can add Google Analytics initialization here if needed
+        }
+    </script>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

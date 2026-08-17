@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us - Al-Bina Careers | Get in Touch for Job Support</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Contact Al-Bina Careers, Job Portal Support, Career Help, Job Queries Pakistan" name="keywords">
+    <meta content="Contact Al-Bina Careers for job support, career guidance, and employer services. Our team is here to help you with any questions about finding jobs or hiring talent." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .btn-outline-primary {
+            color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .btn-outline-primary:hover {
+            background-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* CONTACT PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('img/carousel-1.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .contact-main {
+            padding: 80px 0;
+        }
+        .contact-main .contact-info-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+        .contact-main .contact-info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.08);
+        }
+        .contact-main .contact-info-card i {
+            font-size: 30px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .contact-main .contact-info-card h5 {
+            font-weight: 600;
+        }
+        .contact-main .contact-info-card p {
+            color: #666;
+            margin-bottom: 0;
+        }
+        .contact-main .contact-info-card a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .contact-main .contact-info-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-main .form-floating {
+            margin-bottom: 15px;
+        }
+        .contact-main .form-floating input,
+        .contact-main .form-floating textarea {
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            padding: 15px 20px;
+            font-size: 16px;
+        }
+        .contact-main .form-floating input:focus,
+        .contact-main .form-floating textarea:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(242, 129, 35, 0.1);
+        }
+        .contact-main .form-floating label {
+            padding: 10px 20px;
+            color: #888;
+        }
+
+        .contact-main .btn-submit {
+            background: var(--primary);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        .contact-main .btn-submit:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .contact-main .btn-submit i {
+            margin-right: 10px;
+        }
+
+        .contact-stats {
+            background: var(--primary);
+            padding: 50px 0;
+            color: #fff;
+        }
+        .contact-stats .stat-item {
+            text-align: center;
+        }
+        .contact-stats .stat-item h2 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+        .contact-stats .stat-item p {
+            opacity: 0.9;
+            margin-bottom: 0;
+        }
+        .contact-stats .stat-item i {
+            font-size: 30px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .contact-faq {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .contact-faq .faq-item {
+            background: #fff;
+            padding: 20px 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+        .contact-faq .faq-item:hover {
+            transform: translateX(5px);
+            border-left: 4px solid var(--primary);
+        }
+        .contact-faq .faq-item h6 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .contact-faq .faq-item p {
+            color: #666;
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .contact-cta {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .contact-cta h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .contact-cta p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .contact-cta .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .contact-cta .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            min-height: 400px;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .contact-stats .stat-item h2 {
+                font-size: 24px;
+            }
+            .contact-cta h2 {
+                font-size: 24px;
+            }
+            .contact-main .contact-info-card {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Contact Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: CONTACT INFO START -->
+        <!-- ============================================ -->
+        <div class="container-fluid contact-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Get in Touch</p>
+                    <h2>We'd Love to Hear From You</h2>
+                    <p class="text-muted">Have questions about finding jobs or hiring talent? Our team is here to help. Reach out to us through any of the channels below.</p>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-card text-center">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5>Our Location</h5>
+                            <p>Main Boulevard, Lahore, Pakistan</p>
+                            <a href="https://maps.google.com" target="_blank">View on Google Maps →</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-card text-center">
+                            <i class="fas fa-phone-alt"></i>
+                            <h5>Phone Numbers</h5>
+                            <p><a href="tel:+923001234567">+92-300-1234567</a></p>
+                            <p><a href="tel:+923001234568">+92-300-1234568</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-info-card text-center">
+                            <i class="fas fa-envelope"></i>
+                            <h5>Email Addresses</h5>
+                            <p><a href="mailto:info@albinacareers.com">info@albinacareers.com</a></p>
+                            <p><a href="mailto:support@albinacareers.com">support@albinacareers.com</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Map Column -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27193.69831253498!2d74.30260741686765!3d31.52037063664481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107e9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1700000000000"
+                                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Al-Bina Careers Office Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- Form Column -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="contact-form">
+                            <h4 class="mb-4"><i class="fas fa-paper-plane text-primary me-2"></i>Send Us a Message</h4>
+                            <p class="text-muted mb-4">Fill out the form below and we'll get back to you within 24 hours.</p>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
+                                            <label for="name"><i class="fas fa-user text-primary me-2"></i>Your Full Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email Address" required>
+                                            <label for="email"><i class="fas fa-envelope text-primary me-2"></i>Email Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+                                            <label for="subject"><i class="fas fa-tag text-primary me-2"></i>Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
+                                            <label for="message"><i class="fas fa-comment text-primary me-2"></i>Your Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-submit" type="submit">
+                                            <i class="fas fa-paper-plane"></i>Send Message
+                                        </button>
+                                        <p class="text-muted mt-2" style="font-size: 13px;">
+                                            <i class="fas fa-lock text-primary me-2"></i>Your information is safe with us. We'll respond within 24 hours.
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Main End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: CONTACT STATS START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid contact-stats wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-smile"></i>
+                            <h2 data-toggle="counter-up">50,000+</h2>
+                            <p>Happy Users</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-building"></i>
+                            <h2 data-toggle="counter-up">2,500+</h2>
+                            <p>Companies Trust Us</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-briefcase"></i>
+                            <h2 data-toggle="counter-up">5,000+</h2>
+                            <p>Jobs Listed</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-item">
+                            <i class="fas fa-check-circle"></i>
+                            <h2 data-toggle="counter-up">15,000+</h2>
+                            <p>Successful Placements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Stats End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: WORKING HOURS START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Office Hours</p>
+                    <h2>When We're Available</h2>
+                    <p class="text-muted">Our team is here to help you during the following hours.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center" style="background: #f8f9fa;">
+                            <i class="fas fa-clock" style="font-size: 30px; color: var(--primary);"></i>
+                            <h5>Monday - Friday</h5>
+                            <p><strong style="color: var(--primary);">9:00 AM</strong> - <strong style="color: var(--primary);">6:00 PM</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center" style="background: #f8f9fa;">
+                            <i class="fas fa-clock" style="font-size: 30px; color: var(--primary);"></i>
+                            <h5>Saturday</h5>
+                            <p><strong style="color: var(--primary);">9:00 AM</strong> - <strong style="color: var(--primary);">4:00 PM</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center" style="background: #f8f9fa;">
+                            <i class="fas fa-clock" style="font-size: 30px; color: var(--primary);"></i>
+                            <h5>Sunday</h5>
+                            <p><strong style="color: #888;">Closed</strong></p>
+                            <p style="font-size: 13px; color: #888;">Emergency support available</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="contact-info-card text-center" style="background: var(--primary); color: #fff;">
+                            <i class="fas fa-phone" style="font-size: 30px; color: #fff;"></i>
+                            <h5 style="color: #fff;">Emergency Support</h5>
+                            <p><a href="tel:+923001234567" style="color: #fff; font-weight: 600;">+92-300-1234567</a></p>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 13px;">Available 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Working Hours End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 5: FAQ CONTACT START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid contact-faq wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>Quick Answers</p>
+                    <h2>Frequently Asked Questions</h2>
+                    <p class="text-muted">Find quick answers to the most common questions about our services.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>How can I post a job on Al-Bina Careers?</h6>
+                            <p>You can post a job by clicking on the "Post a Job" button in the navigation bar. Fill out the form with your job details and submit. Our team will review and publish your job within 24 hours.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>How can I apply for a job?</h6>
+                            <p>Browse our job listings, click on the job you're interested in, and click the "Apply Now" button. You can also create a profile to make applying faster and easier.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>Is it free to post a job?</h6>
+                            <p>Yes, posting a job on Al-Bina Careers is completely free. We also offer premium features to boost your job visibility.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>How do I create a job seeker account?</h6>
+                            <p>Click on "Sign Up" in the navigation bar, select "Job Seeker" as your account type, and fill out the registration form. It takes less than 2 minutes.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>How long does it take to get a response?</h6>
+                            <p>We aim to respond to all inquiries within 24 hours during business days. For urgent matters, please call us directly.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h6><i class="fas fa-question-circle text-primary me-2"></i>Can I edit my job listing after posting?</h6>
+                            <p>Yes, you can edit your job listing at any time by logging into your employer account and accessing your job dashboard.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ Contact End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 6: CTA CONTACT START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid contact-cta wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Ready to Start Your Career Journey?</h2>
+                <p>Whether you're looking for your dream job or hiring top talent, Al-Bina Careers is here to help. Contact us today!</p>
+                <a href="job-list.html" class="btn me-3">Browse Jobs</a>
+                <a href="post-job.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Post a Job</a>
+            </div>
+        </div>
+        <!-- CTA Contact End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 7: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Contact Form Script -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for contacting Al-Bina Careers! Our team will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

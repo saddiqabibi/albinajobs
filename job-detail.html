@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Senior Software Engineer Job - Tech Solutions | Al-Bina Careers</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Senior Software Engineer job in Lahore, Software Engineer job Pakistan, Tech Solutions hiring, Al-Bina Careers" name="keywords">
+    <meta content="Apply for Senior Software Engineer position at Tech Solutions in Lahore, Pakistan. Full-time job with competitive salary. Join a leading tech company and grow your career." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .btn-secondary {
+            background-color: var(--secondary) !important;
+            border-color: var(--secondary) !important;
+            color: #fff !important;
+        }
+        .btn-secondary:hover {
+            background-color: var(--dark) !important;
+            border-color: var(--dark) !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* JOB DETAIL PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1200&h=400&fit=crop') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .job-detail-main {
+            padding: 80px 0;
+        }
+        .job-detail-main .job-header {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .job-detail-main .job-header .company-logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .job-detail-main .job-header .job-title {
+            font-size: 28px;
+            font-weight: 700;
+        }
+        .job-detail-main .job-header .company-name {
+            font-size: 18px;
+            color: var(--primary);
+            font-weight: 600;
+        }
+        .job-detail-main .job-header .job-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .job-detail-main .job-header .job-meta span {
+            color: #666;
+            font-size: 14px;
+        }
+        .job-detail-main .job-header .job-meta i {
+            color: var(--primary);
+            margin-right: 5px;
+        }
+        .job-detail-main .job-header .btn-apply {
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .job-detail-main .job-header .btn-apply:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+        .job-detail-main .job-header .btn-save {
+            background: #f8f9fa;
+            color: #555;
+            padding: 14px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            border: 1px solid #ddd;
+            transition: all 0.3s ease;
+        }
+        .job-detail-main .job-header .btn-save:hover {
+            background: var(--primary);
+            color: #fff;
+            border-color: var(--primary);
+        }
+        .job-detail-main .job-header .btn-save:hover i {
+            color: #fff;
+        }
+
+        .job-detail-main .job-info-box {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .job-detail-main .job-info-box h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .job-detail-main .job-info-box .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .job-detail-main .job-info-box .info-item:last-child {
+            border-bottom: none;
+        }
+        .job-detail-main .job-info-box .info-item .label {
+            color: #888;
+            font-size: 14px;
+        }
+        .job-detail-main .job-info-box .info-item .value {
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .job-detail-main .job-description h4 {
+            font-weight: 700;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #222;
+        }
+        .job-detail-main .job-description p {
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        .job-detail-main .job-description ul {
+            margin: 10px 0 20px 25px;
+        }
+        .job-detail-main .job-description ul li {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+        .job-detail-main .job-description .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid var(--primary);
+            padding: 20px 25px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .job-detail-main .job-description .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .job-detail-main .sidebar-widget {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        .job-detail-main .sidebar-widget h5 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary);
+        }
+        .job-detail-main .sidebar-widget .company-detail {
+            text-align: center;
+        }
+        .job-detail-main .sidebar-widget .company-detail img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .job-detail-main .sidebar-widget .company-detail h6 {
+            font-weight: 600;
+        }
+        .job-detail-main .sidebar-widget .company-detail p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .job-detail-main .related-jobs .related-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+            margin-bottom: 15px;
+        }
+        .job-detail-main .related-jobs .related-item:hover {
+            transform: translateX(5px);
+            border-color: var(--primary);
+        }
+        .job-detail-main .related-jobs .related-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .job-detail-main .related-jobs .related-item .info h6 {
+            font-weight: 600;
+            margin-bottom: 2px;
+            font-size: 15px;
+        }
+        .job-detail-main .related-jobs .related-item .info h6 a {
+            color: #222;
+            text-decoration: none;
+        }
+        .job-detail-main .related-jobs .related-item .info h6 a:hover {
+            color: var(--primary);
+        }
+        .job-detail-main .related-jobs .related-item .info small {
+            color: #888;
+            font-size: 13px;
+        }
+        .job-detail-main .related-jobs .related-item .info small i {
+            color: var(--primary);
+            margin-right: 3px;
+        }
+
+        .cta-job-detail {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-job-detail h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .cta-job-detail p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .cta-job-detail .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-job-detail .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .job-detail-main .job-header .job-title {
+                font-size: 22px;
+            }
+            .job-detail-main .job-header .company-logo {
+                width: 70px;
+                height: 70px;
+            }
+            .job-detail-main .job-header .btn-apply {
+                width: 100%;
+                margin-top: 10px;
+            }
+            .cta-job-detail h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link active">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="post-job.html" class="dropdown-item">Post a Job</a>
+                            <a href="pricing.html" class="dropdown-item">Pricing</a>
+                            <a href="contact.html" class="dropdown-item">Contact</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Job Details</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="job-list.html">Job List</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Job Details</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: JOB DETAIL MAIN START -->
+        <!-- ============================================ -->
+        <div class="container-fluid job-detail-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content Column -->
+                    <div class="col-lg-8">
+                        <!-- Job Header -->
+                        <div class="job-header">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <div class="d-flex align-items-start">
+                                        <img class="company-logo flex-shrink-0" src="https://via.placeholder.com/100x100/2B3940/FFFFFF?text=TS" alt="Tech Solutions">
+                                        <div class="ms-4">
+                                            <h2 class="job-title">Senior Software Engineer</h2>
+                                            <div class="company-name">Tech Solutions</div>
+                                            <div class="job-meta">
+                                                <span><i class="fa fa-map-marker-alt"></i> Lahore, Pakistan</span>
+                                                <span><i class="far fa-clock"></i> Full Time</span>
+                                                <span><i class="far fa-money-bill-alt"></i> PKR 150,000 - 250,000</span>
+                                                <span><i class="far fa-calendar-alt"></i> Posted: Aug 15, 2026</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                                    <a href="#" class="btn btn-apply w-100"><i class="fas fa-paper-plane me-2"></i>Apply Now</a>
+                                    <button class="btn btn-save w-100 mt-2"><i class="far fa-heart me-2"></i>Save Job</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Job Description -->
+                        <div class="job-description">
+                            <h4><i class="fas fa-info-circle text-primary me-2"></i>Job Description</h4>
+                            <p>Tech Solutions is looking for a talented and experienced Senior Software Engineer to join our dynamic team in Lahore. As a Senior Software Engineer, you will be responsible for designing, developing, and maintaining high-quality software solutions that power our products and services.</p>
+                            <p>You will work closely with cross-functional teams, including product managers, designers, and other engineers, to deliver scalable and innovative solutions. This is an excellent opportunity for a passionate engineer who wants to make a significant impact in a fast-growing technology company.</p>
+
+                            <h4><i class="fas fa-tasks text-primary me-2"></i>Key Responsibilities</h4>
+                            <ul>
+                                <li><strong>Design and Development:</strong> Design, develop, and maintain robust, scalable, and high-performance software applications using modern programming languages and frameworks.</li>
+                                <li><strong>Code Review:</strong> Conduct code reviews to ensure code quality, best practices, and adherence to coding standards.</li>
+                                <li><strong>Technical Leadership:</strong> Provide technical guidance and mentorship to junior developers and team members.</li>
+                                <li><strong>Collaboration:</strong> Work closely with product managers, designers, and stakeholders to understand requirements and deliver solutions.</li>
+                                <li><strong>Problem Solving:</strong> Troubleshoot and resolve complex technical issues and performance bottlenecks.</li>
+                                <li><strong>Continuous Improvement:</strong> Stay updated with the latest technologies, trends, and best practices in software development.</li>
+                                <li><strong>Documentation:</strong> Create and maintain technical documentation for systems and applications.</li>
+                            </ul>
+
+                            <h4><i class="fas fa-user-graduate text-primary me-2"></i>Requirements & Qualifications</h4>
+                            <ul>
+                                <li><strong>Education:</strong> Bachelor's or Master's degree in Computer Science, Software Engineering, or related field.</li>
+                                <li><strong>Experience:</strong> 5+ years of professional experience in software development.</li>
+                                <li><strong>Technical Skills:</strong> Strong proficiency in Java, Python, or C#; experience with web frameworks (Spring Boot, Django, ASP.NET); knowledge of databases (SQL, NoSQL); experience with cloud platforms (AWS, Azure, GCP) is a plus.</li>
+                                <li><strong>Soft Skills:</strong> Excellent communication, problem-solving, and teamwork skills.</li>
+                                <li><strong>Languages:</strong> Proficiency in English is required.</li>
+                            </ul>
+
+                            <h4><i class="fas fa-gift text-primary me-2"></i>What We Offer</h4>
+                            <ul>
+                                <li><strong>Competitive Salary:</strong> PKR 150,000 - 250,000 per month based on experience.</li>
+                                <li><strong>Benefits:</strong> Health insurance, annual bonuses, and performance incentives.</li>
+                                <li><strong>Professional Growth:</strong> Opportunities for career advancement and skill development.</li>
+                                <li><strong>Work Environment:</strong> Collaborative and innovative work culture with modern facilities.</li>
+                                <li><strong>Flexible Hours:</strong> Flexible working hours and remote work options.</li>
+                            </ul>
+
+                            <div class="highlight-box">
+                                <p><i class="fas fa-clock text-primary me-2"></i> <strong>Application Deadline:</strong> September 30, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Column -->
+                    <div class="col-lg-4">
+                        <!-- Job Info Widget -->
+                        <div class="sidebar-widget">
+                            <h5><i class="fas fa-info-circle text-primary me-2"></i>Job Information</h5>
+                            <div class="job-info-box">
+                                <div class="info-item">
+                                    <span class="label"><i class="far fa-building me-2"></i>Company</span>
+                                    <span class="value">Tech Solutions</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label"><i class="fa fa-map-marker-alt me-2"></i>Location</span>
+                                    <span class="value">Lahore, Pakistan</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label"><i class="far fa-clock me-2"></i>Job Type</span>
+                                    <span class="value">Full Time</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label"><i class="far fa-money-bill-alt me-2"></i>Salary</span>
+                                    <span class="value">PKR 150K - 250K</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label"><i class="far fa-calendar-alt me-2"></i>Posted</span>
+                                    <span class="value">August 15, 2026</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label"><i class="far fa-calendar-alt me-2"></i>Deadline</span>
+                                    <span class="value" style="color: var(--primary); font-weight: 600;">September 30, 2026</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Company Info Widget -->
+                        <div class="sidebar-widget">
+                            <h5><i class="fas fa-building text-primary me-2"></i>About the Company</h5>
+                            <div class="company-detail">
+                                <img src="https://via.placeholder.com/80x80/2B3940/FFFFFF?text=TS" alt="Tech Solutions">
+                                <h6>Tech Solutions</h6>
+                                <p>Tech Solutions is a leading technology company based in Lahore, Pakistan. We specialize in developing innovative software solutions for businesses across the globe. Our team of talented professionals is passionate about technology and committed to delivering excellence.</p>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <span class="badge bg-primary">200+ Employees</span>
+                                    <span class="badge bg-secondary">Est. 2015</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Share Widget -->
+                        <div class="sidebar-widget">
+                            <h5><i class="fas fa-share-alt text-primary me-2"></i>Share This Job</h5>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-primary" style="background: #1877F2 !important; border-color: #1877F2 !important; border-radius: 50%; width: 40px; height: 40px; padding: 0; line-height: 40px; text-align: center;"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="btn btn-primary" style="background: #1DA1F2 !important; border-color: #1DA1F2 !important; border-radius: 50%; width: 40px; height: 40px; padding: 0; line-height: 40px; text-align: center;"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="btn btn-primary" style="background: #0A66C2 !important; border-color: #0A66C2 !important; border-radius: 50%; width: 40px; height: 40px; padding: 0; line-height: 40px; text-align: center;"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="btn btn-primary" style="background: #25D366 !important; border-color: #25D366 !important; border-radius: 50%; width: 40px; height: 40px; padding: 0; line-height: 40px; text-align: center;"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Apply Now Widget -->
+                        <div class="sidebar-widget" style="background: var(--primary); color: #fff;">
+                            <h5 style="color: #fff; border-bottom-color: rgba(255,255,255,0.3);"><i class="fas fa-paper-plane me-2"></i>Ready to Apply?</h5>
+                            <p style="color: rgba(255,255,255,0.9);">Don't miss this opportunity! Apply now and take the next step in your career.</p>
+                            <a href="#" class="btn w-100" style="background: #fff; color: var(--primary); border-radius: 30px; font-weight: 600;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Related Jobs -->
+                <div class="related-jobs mt-5">
+                    <h4 class="mb-4" style="font-weight: 700; border-bottom: 3px solid var(--primary); padding-bottom: 10px;"><i class="fas fa-briefcase text-primary me-2"></i>Related Jobs</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="related-item">
+                                <img src="https://via.placeholder.com/50x50/F28123/FFFFFF?text=DA" alt="Company">
+                                <div class="info">
+                                    <h6><a href="job-detail.html">Marketing Manager</a></h6>
+                                    <small><i class="fa fa-map-marker-alt"></i> Karachi, Pakistan</small>
+                                    <small class="ms-2"><i class="far fa-clock"></i> Full Time</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="related-item">
+                                <img src="https://via.placeholder.com/50x50/2B3940/FFFFFF?text=BC" alt="Company">
+                                <div class="info">
+                                    <h6><a href="job-detail.html">Civil Engineer</a></h6>
+                                    <small><i class="fa fa-map-marker-alt"></i> Islamabad, Pakistan</small>
+                                    <small class="ms-2"><i class="far fa-clock"></i> Full Time</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="related-item">
+                                <img src="https://via.placeholder.com/50x50/F28123/FFFFFF?text=HP" alt="Company">
+                                <div class="info">
+                                    <h6><a href="job-detail.html">Accountant</a></h6>
+                                    <small><i class="fa fa-map-marker-alt"></i> Lahore, Pakistan</small>
+                                    <small class="ms-2"><i class="far fa-clock"></i> Full Time</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="related-item">
+                                <img src="https://via.placeholder.com/50x50/2B3940/FFFFFF?text=GD" alt="Company">
+                                <div class="info">
+                                    <h6><a href="job-detail.html">Graphic Designer</a></h6>
+                                    <small><i class="fa fa-map-marker-alt"></i> Rawalpindi, Pakistan</small>
+                                    <small class="ms-2"><i class="far fa-clock"></i> Full Time</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Detail Main End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: CTA JOB DETAIL START -->
+        <!-- ============================================ -->
+        <div class="container-fluid cta-job-detail wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Can't Find the Right Job?</h2>
+                <p>We're constantly adding new job opportunities. Subscribe to our job alerts and never miss an opportunity.</p>
+                <a href="job-list.html" class="btn me-3">Browse All Jobs</a>
+                <a href="contact.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Contact Us</a>
+            </div>
+        </div>
+        <!-- CTA Job Detail End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Save Job Button Script -->
+    <script>
+        document.querySelector('.btn-save').addEventListener('click', function() {
+            var icon = this.querySelector('i');
+            if (icon.classList.contains('far')) {
+                icon.classList.remove('far');
+                icon.classList.add('fas');
+                this.style.background = '#F28123';
+                this.style.color = '#fff';
+                this.style.borderColor = '#F28123';
+            } else {
+                icon.classList.remove('fas');
+                icon.classList.add('far');
+                this.style.background = '#f8f9fa';
+                this.style.color = '#555';
+                this.style.borderColor = '#ddd';
+            }
+        });
+    </script>
+</body>
+
+</html>

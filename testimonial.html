@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Testimonials - Al-Bina Careers | What Our Users Say</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Testimonials, Client Reviews, Success Stories, Al-Bina Careers, Job Portal Reviews" name="keywords">
+    <meta content="Read real testimonials from job seekers and employers who found success through Al-Bina Careers. See how we've helped thousands connect with their dream jobs." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* ============================================ */
+        /* CUSTOM COLOR OVERRIDES */
+        /* ============================================ */
+        :root {
+            --primary: #F28123;
+            --primary-dark: #d9741e;
+            --secondary: #2B3940;
+            --light: #FFF8F0;
+            --dark: #1a1a2e;
+        }
+
+        .bg-primary { background-color: var(--primary) !important; }
+        .text-primary { color: var(--primary) !important; }
+        .btn-primary {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .btn-primary:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+        .navbar-light .navbar-brand h1 {
+            color: var(--primary) !important;
+        }
+        .navbar-light .navbar-nav .nav-link:hover,
+        .navbar-light .navbar-nav .nav-link.active {
+            color: var(--primary) !important;
+        }
+        .footer .btn.btn-social:hover {
+            color: var(--primary);
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+        }
+        .back-to-top {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+        }
+        .back-to-top:hover {
+            background-color: var(--primary-dark) !important;
+            border-color: var(--primary-dark) !important;
+        }
+
+        /* ============================================ */
+        /* TESTIMONIAL PAGE STYLES */
+        /* ============================================ */
+        .page-header {
+            background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('img/carousel-1.jpg') center center no-repeat;
+            background-size: cover;
+            padding: 100px 0 80px;
+        }
+        .page-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        .page-header .breadcrumb {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .page-header .breadcrumb .breadcrumb-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .page-header .breadcrumb .breadcrumb-item a:hover {
+            color: #fff;
+        }
+        .page-header .breadcrumb .breadcrumb-item.active {
+            color: #fff;
+        }
+        .page-header .breadcrumb-item + .breadcrumb-item::before {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .testimonial-main {
+            padding: 80px 0;
+        }
+        .testimonial-main .testimonial-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        .testimonial-main .testimonial-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+        .testimonial-main .testimonial-item .quote-icon {
+            font-size: 30px;
+            color: var(--primary);
+            opacity: 0.3;
+            margin-bottom: 15px;
+        }
+        .testimonial-main .testimonial-item p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.8;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        .testimonial-main .testimonial-item .user-info {
+            display: flex;
+            align-items: center;
+        }
+        .testimonial-main .testimonial-item .user-info img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .testimonial-main .testimonial-item .user-info h5 {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .testimonial-main .testimonial-item .user-info .role {
+            color: var(--primary);
+            font-size: 14px;
+        }
+        .testimonial-main .testimonial-item .user-info .company {
+            color: #888;
+            font-size: 13px;
+        }
+        .testimonial-main .testimonial-item .stars {
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-stats {
+            background: #f8f9fa;
+            padding: 50px 0;
+        }
+        .testimonial-stats .stat-box {
+            text-align: center;
+            padding: 25px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .testimonial-stats .stat-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 45px rgba(0,0,0,0.1);
+        }
+        .testimonial-stats .stat-box h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        .testimonial-stats .stat-box p {
+            color: #666;
+            margin-bottom: 0;
+        }
+        .testimonial-stats .stat-box i {
+            font-size: 30px;
+            color: var(--primary);
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .testimonial-carousel-section {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .testimonial-carousel-section .testimonial-item {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 45px rgba(0,0,0,0.05);
+        }
+        .testimonial-carousel-section .testimonial-item .quote-icon {
+            font-size: 30px;
+            color: var(--primary);
+            opacity: 0.3;
+            margin-bottom: 10px;
+        }
+        .testimonial-carousel-section .testimonial-item p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.8;
+            font-style: italic;
+        }
+        .testimonial-carousel-section .testimonial-item .user-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .testimonial-carousel-section .testimonial-item .user-info h5 {
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .testimonial-carousel-section .testimonial-item .user-info .role {
+            color: #888;
+            font-size: 13px;
+        }
+
+        .cta-testimonial {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 60px 0;
+            color: #fff;
+            text-align: center;
+        }
+        .cta-testimonial h2 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .cta-testimonial p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 25px;
+        }
+        .cta-testimonial .btn {
+            background: #fff;
+            color: var(--primary);
+            padding: 14px 45px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        .cta-testimonial .btn:hover {
+            background: var(--dark);
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .footer {
+            background-color: #1a2529 !important;
+        }
+        .footer .btn-link {
+            color: rgba(255,255,255,0.6) !important;
+            text-decoration: none;
+        }
+        .footer .btn-link:hover {
+            color: var(--primary) !important;
+        }
+        .footer .btn-social {
+            color: rgba(255,255,255,0.6) !important;
+            border-color: rgba(255,255,255,0.2) !important;
+        }
+        .footer .btn-social:hover {
+            background-color: var(--primary) !important;
+            border-color: var(--primary) !important;
+            color: #fff !important;
+        }
+        .footer .copyright {
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .footer .copyright a {
+            color: var(--primary) !important;
+            text-decoration: none;
+        }
+        .footer .copyright a:hover {
+            text-decoration: underline;
+        }
+        .footer .form-control {
+            border-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+        .footer .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .testimonial-carousel .owl-item .testimonial-item,
+        .testimonial-carousel .owl-item.center .testimonial-item * {
+            transition: .5s;
+        }
+        .testimonial-carousel .owl-item.center .testimonial-item {
+            background: var(--primary) !important;
+            color: #fff !important;
+        }
+        .testimonial-carousel .owl-item.center .testimonial-item * {
+            color: #fff !important;
+        }
+        .testimonial-carousel .owl-item.center .testimonial-item .quote-icon {
+            color: #fff !important;
+            opacity: 0.5 !important;
+        }
+        .testimonial-carousel .owl-item.center .testimonial-item .role {
+            color: rgba(255,255,255,0.8) !important;
+        }
+        .testimonial-carousel .owl-dots {
+            margin-top: 24px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        .testimonial-carousel .owl-dot {
+            position: relative;
+            display: inline-block;
+            margin: 0 5px;
+            width: 15px;
+            height: 15px;
+            border: 5px solid var(--primary);
+            border-radius: 2px;
+            transition: .5s;
+        }
+        .testimonial-carousel .owl-dot.active {
+            background: var(--dark);
+            border-color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 32px;
+            }
+            .cta-testimonial h2 {
+                font-size: 24px;
+            }
+            .testimonial-main .testimonial-item {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+
+        <!-- ============================================ -->
+        <!-- SPINNER START -->
+        <!-- ============================================ -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- ============================================ -->
+        <!-- NAVBAR START -->
+        <!-- ============================================ -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+            <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
+                <h1 class="m-0 text-primary"><i class="fas fa-briefcase me-2"></i>Al-Bina Careers</h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="job-list.html" class="nav-item nav-link">Job List</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="category.html" class="dropdown-item">Job Categories</a>
+                            <a href="testimonial.html" class="dropdown-item active">Testimonials</a>
+                            <a href="blog.html" class="dropdown-item">Career Blog</a>
+                            <a href="404.html" class="dropdown-item">404 Error</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="post-job.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">
+                    Post a Job <i class="fa fa-arrow-right ms-3"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 1: PAGE HEADER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid page-header mb-0 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container text-center py-5">
+                <h1 class="display-3 text-white animated slideInDown mb-3">Testimonials</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Resources</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Testimonials</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 2: TESTIMONIAL STATS START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid testimonial-stats wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-box">
+                            <i class="fas fa-smile"></i>
+                            <h2>50,000+</h2>
+                            <p>Happy Users</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-box">
+                            <i class="fas fa-star"></i>
+                            <h2>4.8/5</h2>
+                            <p>Average Rating</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-box">
+                            <i class="fas fa-building"></i>
+                            <h2>2,500+</h2>
+                            <p>Companies Trust Us</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stat-box">
+                            <i class="fas fa-check-circle"></i>
+                            <h2>15,000+</h2>
+                            <p>Success Stories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Stats End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 3: TESTIMONIAL CAROUSEL START -->
+        <!-- ============================================ -->
+        <div class="container-fluid testimonial-carousel-section wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>What People Say</p>
+                    <h2>Real Stories from Our Community</h2>
+                    <p class="text-muted">Hear from job seekers and employers who found success through Al-Bina Careers.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel">
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Al-Bina Careers helped me find my dream job in just 2 weeks! The platform is incredibly easy to use and the job listings are always up-to-date. I highly recommend this to all job seekers in Pakistan.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Ahmed Khan</h5>
+                                <small class="role">Software Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>As an employer, Al-Bina Careers has been a game-changer. We've hired 5 excellent candidates through this platform. The filtering and search features are fantastic and save us so much time.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Sara Ahmed</h5>
+                                <small class="role">HR Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>I've used many job portals in Pakistan, but Al-Bina Careers is by far the best. The interface is clean, and I received interview calls within days of posting my resume. Truly amazing!</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Usman Ali</h5>
+                                <small class="role">Marketing Professional</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Finding quality candidates used to be a major challenge for our company. Al-Bina Careers made it simple and efficient. We've found our best team members through this platform.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Fatima Zaidi</h5>
+                                <small class="role">CEO, Tech Solutions</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-4">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>Al-Bina Careers is the most reliable job portal in Pakistan. I found a position that perfectly matches my skills and experience. The application process was smooth and efficient.</p>
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <div class="ps-3">
+                                <h5 class="mb-1">Muhammad Bilal</h5>
+                                <small class="role">Civil Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Carousel End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 4: TESTIMONIAL GRID START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid testimonial-main wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p>More Testimonials</p>
+                    <h2>What Our Users Say</h2>
+                    <p class="text-muted">Real reviews from real people who found success through Al-Bina Careers.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"Al-Bina Careers helped me transition into a leadership role. The career resources and job alerts kept me informed about the best opportunities. I couldn't be happier with my new position."</p>
+                            <div class="user-info">
+                                <img src="img/testimonial-2.jpg" alt="Zara Khan">
+                                <div>
+                                    <h5>Zara Khan</h5>
+                                    <div class="role">Project Manager</div>
+                                    <div class="company">Builders Corp</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"We've been using Al-Bina Careers for 2 years now and have hired over 20 amazing employees. The platform is reliable, user-friendly, and has transformed our hiring process completely."</p>
+                            <div class="user-info">
+                                <img src="img/testimonial-3.jpg" alt="Imran Ali">
+                                <div>
+                                    <h5>Imran Ali</h5>
+                                    <div class="role">CEO</div>
+                                    <div class="company">Digital Agency</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                            <p>"I found a job that perfectly matches my skills and experience. The interview process was smooth, and I'm now working at my dream company. Thank you, Al-Bina Careers!"</p>
+                            <div class="user-info">
+                                <img src="img/testimonial-4.jpg" alt="Hira Tariq">
+                                <div>
+                                    <h5>Hira Tariq</h5>
+                                    <div class="role">Graphic Designer</div>
+                                    <div class="company">Creative Studio</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Grid End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 5: CTA TESTIMONIAL START (NEW) -->
+        <!-- ============================================ -->
+        <div class="container-fluid cta-testimonial wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <h2>Ready to Start Your Success Story?</h2>
+                <p>Join thousands of professionals and employers who have found success through Al-Bina Careers. Your journey starts here.</p>
+                <a href="job-list.html" class="btn me-3">Find Your Dream Job</a>
+                <a href="contact.html" class="btn" style="background: var(--dark); color: #fff; border-radius: 30px;">Contact Us</a>
+            </div>
+        </div>
+        <!-- CTA Testimonial End -->
+
+        <!-- ============================================ -->
+        <!-- SECTION 6: FOOTER START -->
+        <!-- ============================================ -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Al-Bina Careers</h5>
+                        <p class="mb-4">Pakistan's most trusted job portal connecting talented professionals with top employers across all industries. Your career journey starts here.</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Job Seekers</h5>
+                        <a class="btn btn-link text-white-50" href="job-list.html">Browse Jobs</a>
+                        <a class="btn btn-link text-white-50" href="category.html">Job Categories</a>
+                        <a class="btn btn-link text-white-50" href="blog.html">Career Resources</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Support</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">For Employers</h5>
+                        <a class="btn btn-link text-white-50" href="post-job.html">Post a Job</a>
+                        <a class="btn btn-link text-white-50" href="about.html">Find Talent</a>
+                        <a class="btn btn-link text-white-50" href="pricing.html">Pricing Plans</a>
+                        <a class="btn btn-link text-white-50" href="contact.html">Contact Sales</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">Contact Information</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Main Boulevard, Lahore, Pakistan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+92-300-1234567</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@albinacareers.com</p>
+                        <p class="mb-0"><i class="fa fa-clock me-3"></i>Mon - Sat, 9:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="index.html">Al-Bina Careers</a>, All Rights Reserved.
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="privacy.html">Privacy Policy</a>
+                                <a href="terms.html">Terms of Use</a>
+                                <a href="cookies.html">Cookies Policy</a>
+                                <a href="faqs.html">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- ============================================ -->
+        <!-- BACK TO TOP -->
+        <!-- ============================================ -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
